@@ -1,0 +1,208 @@
+
+/* Playkey design
+ctrl + f on a subject to find the right CSS
+*/
+/* ########## Topbar ########## */
+/* ########## Site Header ########## */
+/* ########## Header Sidebar ########## */
+/* ########## Content ########## */
+/* ## -- Content Hero -- ## */
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #3A3535;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* ########## Topbar ########## */
+
+.top {
+    background: #865BCE;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    max-width: 980px;
+    width: 100%;
+}
+
+.top ul li {
+    color: #F4F4F4;
+    font-size: 0.9em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.top ul li::before {
+    content: ' ';
+    display: inline-block;
+    width: 15px;
+    height: 12px;
+    background-image: url('playkey-checkmark.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 8px;
+}
+
+/* ########## Site Header ########## */
+
+.site-header {
+    display: flex;
+    width: 100%;
+    background: none;
+    position: fixed;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding-left: 330px;
+}
+
+/* ########## Header Sidebar ########## */
+
+.header-wrapper {
+    display: flex;
+    width: 330px;
+    background: #232020;
+    justify-content: center;
+}
+
+.header-wrapper .header {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 40px 0;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.header-wrapper .header .identity img{
+    width: 100%;
+}
+
+.header-wrapper .header .identity {
+    margin-bottom: 50px;
+}
+
+.header-wrapper .header .categories {
+    display: flex;
+    width: 150px;
+    padding-bottom: 50px;
+    border-bottom: 2px solid #865BCE;
+}
+
+.header-wrapper .header .categories li, .header-wrapper .header .misc-info li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.header-wrapper .header .categories li a, .header-wrapper .header .misc-info li a {
+    color: #BEAEA3;
+    text-decoration: none;
+}
+
+.header-wrapper .header .categories li a:hover, .header-wrapper .header .misc-info li a:hover{
+    color: #F4F4F4;
+}
+
+.header-wrapper .header .misc-info {
+    display: flex;
+    width: 150px;
+    margin-top: 70px;
+}
+
+
+/* ########## Content ########## */
+
+.content-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.content-wrapper .content {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* ## -- Content Hero -- ## */
+
+.content-wrapper .content .content-hero {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 72%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    padding: 90px;
+}
+
+.content .content-hero .hero-title {
+    margin-top: 50px;
+    width: 50%;
+}
+
+.content .content-hero .hero-title h1 {
+    font-size: 75px;
+    color: white;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.85);
+}
+
+.content .content-hero .hero-prices {
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.content .content-hero .hero-prices .price-tag, .content .content-hero .hero-prices .cta-basket {
+    padding: 10px 40px;
+    background-color: #865BCE;
+    display: flex;
+    align-items: center;
+}
+
+.content .content-hero .hero-prices .price-tag h3, .content .content-hero .hero-prices .cta-basket h3 {
+    font-size: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+}
+
+.content .content-hero .hero-prices .cta-basket {
+    margin-left: 20px;
+}
+
+.content .content-hero .hero-prices .cta-basket h3 {
+    font-size: 20px;
+}
+
+.content .content-hero .hero-prices .cta-basket h3:nth-of-type(1) {
+    margin-right: 30px;
+}
